@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Product Enhancer",
+  "version": "1.5",
+  "description": "Adds custom product info cards to Amazon pages across all markets",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.amazon.com/*",
+        "https://*.amazon.co.uk/*",
+        "https://*.amazon.de/*",
+        "https://*.amazon.fr/*",
+        "https://*.amazon.it/*",
+        "https://*.amazon.es/*",
+        "https://*.amazon.ca/*",
+        "https://*.amazon.co.jp/*",
+        "https://*.amazon.in/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
